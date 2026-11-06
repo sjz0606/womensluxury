@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Womens Luxury — ayollar uchun lyuks kiyimlar, Toshkent</title>
+<meta name="description" content="Womens Luxury: Toshkentdagi ayollar kiyimi butigi. Fall–Winter 2026/27 kolleksiyasi. Osiyo ko'chasi 1 va Chilonzor 1-kvartal 15. Har kuni 10:00–22:00.">
+<meta name="theme-color" content="#f8f1ec">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Womens Luxury — Fall–Winter 2026/27">
+<meta property="og:description" content="Nafis siluetlar, premium matolar va zamonaviy klassika. Toshkentdagi ikki butik, har kuni 10:00–22:00.">
+<meta property="og:image" content="assets/og.jpg">
+<link rel="icon" href="assets/mark.png" type="image/png"><link rel="apple-touch-icon" href="assets/apple-touch.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body class="is-loading">
+
+<div class="veil" id="veil" aria-hidden="true">
+  <div class="veil-mark"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30"/></svg><img src="assets/mono-gold.webp" alt=""></div>
+  <p class="veil-word">WOMENS&nbsp;LUXURY</p>
+  <span class="veil-bar"><i id="veilBar"></i></span>
+</div>
+
+<canvas id="gl" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <a class="brand" href="#bosh" aria-label="Womens Luxury">
+    <img src="assets/mark.png" alt="" width="36" height="36">
+    <span>Womens Luxury</span>
+  </a>
+  <nav class="nav">
+    <a href="#kolleksiya" data-t="nNew"></a>
+    <a href="#butik" data-t="nBoutique"></a>
+    <a href="#xizmat" data-t="nService"></a>
+    <a href="#filiallar" data-t="nVisit"></a>
+  </nav>
+  <div class="top-r">
+    <button class="lang" id="lang" type="button" data-t-aria="langAria">RU</button>
+    <a class="top-call" href="tel:+998973497770" data-t-aria="call">
+      <svg class="ic"><use href="#i-phone"/></svg><span>97 349 77 70</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Hero + 3D arkada -->
+  <section class="arcade" id="bosh">
+    <div class="sticky">
+      <div class="hero-frame" id="heroFrame" aria-hidden="true"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i></div>
+      <div class="hero" id="hero">
+        <p class="kicker"><span class="line"></span><span data-t="season"></span></p>
+        <h1 class="hero-title"><span class="ht-a">Womens</span><span class="ht-b">Luxury</span></h1>
+        <p class="hero-sub" data-t="heroSub"></p>
+        <div class="hero-acts">
+          <a class="btn btn-gold" href="#kolleksiya"><span data-t="heroCta"></span><svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#filiallar" data-t="heroVisit"></a>
+        </div>
+        <p class="hero-meta"><span data-t="metaCity"></span><i></i><span data-t="metaTime"></span></p>
+      </div>
+      <p class="scroll-hint" id="hint"><span data-t="scroll"></span><i></i></p>
+
+      <div class="look" id="look" aria-live="polite">
+        <p class="look-no"><b id="lookNo">01</b><span>/</span><span id="lookAll">10</span></p>
+        <h2 class="look-name" id="lookName"></h2>
+        <p class="look-note" id="lookNote"></p>
+        <button class="look-open" id="lookOpen" type="button"><span data-t="lookOpen"></span><svg class="ic"><use href="#i-play"/></svg></button>
+      </div>
+      <div class="rail" id="rail" aria-hidden="true"><i id="railFill"></i></div>
+    </div>
+    <span class="anchor" id="kolleksiya"></span>
+  </section>
+
+  <!-- 3D ishlamasa -->
+  <section class="flat" id="flat" hidden>
+    <header class="sec-head"><p class="kicker"><span class="line"></span><span data-t="season"></span></p><h2 data-t="colTitle"></h2></header>
+    <div class="flat-grid" id="flatGrid"></div>
+  </section>
+
+  <div class="after">
+    <!-- 2. Manifest -->
+    <section class="manifest">
+      <p class="kicker center"><span class="line"></span><span data-t="manKick"></span><span class="line"></span></p>
+      <blockquote class="man-q" id="manQ" data-t="manQuote"></blockquote>
+      <p class="man-sign">— Womens Luxury</p>
+    </section>
+
+    <!-- 3. Butik -->
+    <section class="boutique" id="butik">
+      <div class="bq-media">
+        <figure class="bq-a"><video data-src="assets/d/store-a.mp4" poster="assets/d/store-a.webp" muted loop playsinline preload="none"></video></figure>
+        <figure class="bq-b"><video data-src="assets/d/store-b.mp4" poster="assets/d/store-b.webp" muted loop playsinline preload="none"></video></figure>
+      </div>
+      <div class="bq-text">
+        <p class="kicker"><span class="line"></span><span data-t="bqKick"></span></p>
+        <h2 data-t="bqTitle"></h2>
+        <p class="lead" data-t="bqLead"></p>
+        <ol class="bq-steps">
+          <li><span>I</span><div><b data-t="bq1"></b><p data-t="bq1t"></p></div></li>
+          <li><span>II</span><div><b data-t="bq2"></b><p data-t="bq2t"></p></div></li>
+          <li><span>III</span><div><b data-t="bq3"></b><p data-t="bq3t"></p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. Xizmat -->
+    <section class="service" id="xizmat">
+      <header class="sec-head center">
+        <p class="kicker center"><span class="line"></span><span data-t="svKick"></span><span class="line"></span></p>
+        <h2 data-t="svTitle"></h2>
+      </header>
+      <div class="sv-grid">
+        <article class="sv"><svg class="sv-ic"><use href="#i-hanger"/></svg><h3 data-t="sv1"></h3><p data-t="sv1t"></p></article>
+        <article class="sv"><svg class="sv-ic"><use href="#i-box"/></svg><h3 data-t="sv2"></h3><p data-t="sv2t"></p></article>
+        <article class="sv"><svg class="sv-ic"><use href="#i-chat"/></svg><h3 data-t="sv3"></h3><p data-t="sv3t"></p></article>
+        <article class="sv"><svg class="sv-ic"><use href="#i-child"/></svg><h3 data-t="sv4"></h3><p data-t="sv4t"></p><a class="sv-link" href="https://www.instagram.com/luxurykids_uzbekistan/" target="_blank" rel="noopener">@luxurykids_uzbekistan</a></article>
+      </div>
+    </section>
+
+    <!-- 5. Shaxsiy tanlov so'rovi -->
+    <section class="request" id="sorov">
+      <div class="rq-card">
+        <div class="rq-head">
+          <p class="kicker"><span class="line"></span><span data-t="rqKick"></span></p>
+          <h2 data-t="rqTitle"></h2>
+          <p class="lead" data-t="rqLead"></p>
+          <figure class="rq-pic"><img src="assets/v/l06.webp" alt="" loading="lazy"><figcaption><img src="assets/mono-gold.webp" alt="" width="34"><span data-t="rqPic"></span></figcaption></figure>
+        </div>
+        <form class="rq-form" id="rqForm" novalidate>
+          <fieldset class="chips" id="rqWhat">
+            <legend data-t="rqWhat"></legend>
+          </fieldset>
+          <fieldset class="chips" id="rqSize">
+            <legend data-t="rqSize"></legend>
+          </fieldset>
+          <fieldset class="chips" id="rqShop">
+            <legend data-t="rqShop"></legend>
+          </fieldset>
+          <label class="fld"><span data-t="rqName"></span><input id="rqN" name="n" autocomplete="name" data-ph-uz="Ismingiz" data-ph-ru="Ваше имя"></label>
+          <label class="fld"><span data-t="rqPhone"></span><input id="rqP" name="p" type="tel" inputmode="tel" autocomplete="tel" placeholder="+998 __ ___ __ __"></label>
+          <button class="btn btn-gold wide" type="submit"><svg class="ic"><use href="#i-tg"/></svg><span data-t="rqSend"></span></button>
+          <p class="rq-note" id="rqNote" data-t="rqNote"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 6. Filiallar -->
+    <section class="visit" id="filiallar">
+      <header class="sec-head center">
+        <p class="kicker center"><span class="line"></span><span data-t="viKick"></span><span class="line"></span></p>
+        <h2 data-t="viTitle"></h2>
+      </header>
+      <div class="vi-grid">
+        <article class="shop">
+          <p class="shop-no">01</p>
+          <h3 data-t="s1"></h3>
+          <p class="shop-addr" data-t="s1a"></p>
+          <p class="shop-hint" data-t="s1h"></p>
+          <p class="shop-time"><svg class="ic"><use href="#i-clock"/></svg><span data-t="daily"></span></p>
+          <div class="shop-acts">
+            <a class="btn btn-gold sm" href="https://yandex.uz/maps/?pt=69.297796,41.324904&z=17&l=map" target="_blank" rel="noopener"><svg class="ic"><use href="#i-pin"/></svg><span>Yandex</span></a>
+            <a class="btn btn-ghost sm" href="https://www.google.com/maps?q=41.324904,69.297796" target="_blank" rel="noopener"><span>Google</span></a>
+          </div>
+        </article>
+        <article class="shop">
+          <p class="shop-no">02</p>
+          <h3 data-t="s2"></h3>
+          <p class="shop-addr" data-t="s2a"></p>
+          <p class="shop-hint" data-t="s2h"></p>
+          <p class="shop-time"><svg class="ic"><use href="#i-clock"/></svg><span data-t="daily"></span></p>
+          <div class="shop-acts">
+            <a class="btn btn-gold sm" href="https://yandex.uz/maps/?pt=69.231398,41.286793&z=17&l=map" target="_blank" rel="noopener"><svg class="ic"><use href="#i-pin"/></svg><span>Yandex</span></a>
+            <a class="btn btn-ghost sm" href="https://www.google.com/maps?q=41.286793,69.231398" target="_blank" rel="noopener"><span>Google</span></a>
+          </div>
+        </article>
+        <aside class="contact">
+          <p class="kicker"><span class="line"></span><span data-t="ctKick"></span></p>
+          <a class="ct-big" href="tel:+998973497770">+998 97 349 77 70</a>
+          <a class="ct-big" href="tel:+998880060101">+998 88 006 01 01</a>
+          <div class="ct-links">
+            <a href="https://t.me/womensluxuryshop" target="_blank" rel="noopener"><svg class="ic"><use href="#i-tg"/></svg>@womensluxuryshop</a>
+            <a href="https://t.me/womensluxuryshopuz" target="_blank" rel="noopener"><svg class="ic"><use href="#i-tg"/></svg><span data-t="tgChannel"></span></a>
+            <a href="https://www.instagram.com/womensluxury.shop/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-ig"/></svg>@womensluxury.shop</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <img src="assets/mark.png" alt="" width="54" height="54">
+      <p class="foot-word">WOMENS LUXURY</p>
+      <p class="foot-sub" data-t="footSub"></p>
+      <p class="foot-copy">© 2026 Womens Luxury · <span data-t="city"></span></p>
+    </footer>
+  </div>
+</main>
+
+<nav class="dock" aria-label="Tezkor aloqa">
+  <a href="tel:+998973497770"><svg class="ic"><use href="#i-phone"/></svg><span data-t="dCall"></span></a>
+  <a href="https://t.me/womensluxuryshop" target="_blank" rel="noopener"><svg class="ic"><use href="#i-tg"/></svg><span>Telegram</span></a>
+  <a href="#filiallar"><svg class="ic"><use href="#i-pin"/></svg><span data-t="dMap"></span></a>
+</nav>
+
+<div class="dlg" id="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgName" hidden>
+  <div class="dlg-bg" id="dlgBg"></div>
+  <div class="dlg-box">
+    <button class="dlg-x" id="dlgX" type="button" data-t-aria="close"><svg class="ic"><use href="#i-x"/></svg></button>
+    <div class="dlg-media"><video id="dlgVideo" muted loop playsinline></video><button class="snd" id="snd" type="button" data-t-aria="sound"><svg class="ic"><use href="#i-mute" id="sndUse"/></svg></button></div>
+    <div class="dlg-text">
+      <p class="kicker"><span class="line"></span><span id="dlgNo"></span></p>
+      <h2 id="dlgName"></h2>
+      <p id="dlgNote"></p>
+      <p class="dlg-how" data-t="dlgHow"></p>
+      <div class="dlg-acts">
+        <a class="btn btn-gold" id="dlgAsk" target="_blank" rel="noopener"><svg class="ic"><use href="#i-tg"/></svg><span data-t="dlgAsk"></span></a>
+        <a class="btn btn-ghost" href="tel:+998973497770"><svg class="ic"><use href="#i-phone"/></svg><span data-t="dCall"></span></a>
+      </div>
+      <div class="dlg-nav">
+        <button id="dlgPrev" type="button"><svg class="ic"><use href="#i-arrow"/></svg><span data-t="prev"></span></button>
+        <button id="dlgNext" type="button"><span data-t="next"></span><svg class="ic"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4-2 1.4a12 12 0 0 0 6.5 6.5l1.4-2 4 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13.5 6.5 19 12l-5.5 5.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.6v6.8l5.4-3.4z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path d="M20.5 4.5 3.6 11.1c-.8.3-.7 1.4.1 1.6l4.1 1.2 1.6 4.9c.2.7 1.1.9 1.6.3l2.3-2.4 4.2 3.1c.6.4 1.4.1 1.6-.6l2.6-12.6c.2-.8-.6-1.4-1.2-1.1z"/><path d="m7.8 13.9 8.6-5.6-6.4 6.7"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="m16 9.5 5 5M21 9.5l-5 5"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+    <symbol id="i-hanger" viewBox="0 0 24 24"><path d="M12 7.2a2 2 0 1 1 2-2"/><path d="M12 7.2v1.6L3.4 15a1.2 1.2 0 0 0 .7 2.2h15.8a1.2 1.2 0 0 0 .7-2.2L12 8.8"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5 12 11.5l8.5-4M12 11.5v9"/><path d="m7.8 5.5 8.5 4"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4.5 5.5h15v10h-8l-4.5 3.5v-3.5h-2.5z"/><path d="M8.5 10.5h7"/></symbol>
+    <symbol id="i-child" viewBox="0 0 24 24"><circle cx="12" cy="5.6" r="2.2"/><path d="M8 20.5l1.2-6.5L7 10.5l5-2 5 2-2.2 3.5 1.2 6.5"/><path d="M10 20.5h4"/></symbol>
+  </defs>
+</svg>
+
+<script src="vendor/lenis.min.js"></script>
+<script type="module" src="js/site.js"></script>
+</body>
+</html>
